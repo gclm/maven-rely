@@ -1,2 +1,2 @@
 # sabre-oss-parent
-oss 上传夫文件工具类
+oss 上传父文件工具类
