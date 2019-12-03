@@ -17,7 +17,7 @@ nexus/Maven 中央仓库上传父类
 <parent>
      <groupId>club.gclmit</groupId>
      <artifactId>oss-nexus-parent</artifactId>
-     <version>1.0.0</version>
+     <version>1.0.1</version>
 </parent>
 ```
 
