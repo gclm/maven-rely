@@ -22,10 +22,13 @@
         <maven.compiler.target>1.8</maven.compiler.target>
 
         <!--  maven 仓库配置 -->
-        <snapshots-repository-url>https://oss.sonatype.org/content/repositories/snapshots/
-        </snapshots-repository-url>
-        <releases-repository-url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
+        <releases-repository-url>
+            https://oss.sonatype.org/service/local/staging/deploy/maven2/
         </releases-repository-url>
+
+        <snapshots-repository-url>
+            https://oss.sonatype.org/content/repositories/snapshots/
+        </snapshots-repository-url>
 
     </properties>
 
@@ -58,12 +61,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>sonatype-nexus-maven</id>
+            <id>sonatype</id>
             <name>Snapshots Repository</name>
             <url>${snapshots-repository-url}</url>
         </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-maven</id>
+            <id>sonatype</id>
             <name>Release Repository</name>
             <url>${releases-repository-url}</url>
         </repository>
