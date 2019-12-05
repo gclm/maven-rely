@@ -6,7 +6,7 @@
 
     <groupId>club.gclmit</groupId>
     <artifactId>oss-nexus-parent</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.2</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -59,16 +59,16 @@
     </scm>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>huawei</id>
-            <name>Snapshots Repository</name>
-            <url>${snapshots-repository-url}</url>
-        </snapshotRepository>
         <repository>
-            <id>huawei</id>
+            <id>releases</id>
             <name>Release Repository</name>
             <url>${releases-repository-url}</url>
         </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Snapshots Repository</name>
+            <url>${snapshots-repository-url}</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <profiles>
