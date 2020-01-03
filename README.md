@@ -1,5 +1,5 @@
 # oss-nexus-parent
-nexus/Maven 中央仓库上传父类
+nexus 仓库上传父类
 
 # 功能点
 
@@ -15,7 +15,7 @@ nexus/Maven 中央仓库上传父类
 <parent>
      <groupId>club.gclmit</groupId>
      <artifactId>oss-nexus-parent</artifactId>
-     <version>2.0.0</version>
+     <version>2.0.2</version>
 </parent>
 ```
 
