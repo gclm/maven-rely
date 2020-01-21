@@ -86,7 +86,7 @@
             </distributionManagement>
         </profile>
         <profile>
-            <id>huawei-oss-release</id>
+            <id>huaweicloud-oss-release</id>
             <distributionManagement>
                 <!--    中央仓库  -->
                 <snapshotRepository>
