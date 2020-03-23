@@ -6,7 +6,7 @@
 
     <groupId>club.gclmit</groupId>
     <artifactId>oss-nexus-parent</artifactId>
-    <version>3.0.0</version>
+    <version>3.1.0</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -38,6 +38,15 @@
         <huaweicloud-snapshots>
             https://devrepo.devcloud.cn-north-4.huaweicloud.com/07/nexus/content/repositories/ec64d022094d4aa8a9fa1143342c8a45_2_0/
         </huaweicloud-snapshots>
+
+        <!--  inskylab nexus -->
+        <inskylab-releases>
+            https://maven.inskydrone.cn/repository/maven-releases/
+        </inskylab-releases>
+
+        <inskylab-snapshots>
+            https://maven.inskydrone.cn/repository/maven-snapshots/
+        </inskylab-snapshots>
 
     </properties>
 
@@ -98,6 +107,22 @@
                     <id>huaweicloud-releases</id>
                     <name>Release Repository</name>
                     <url>${huaweicloud-releases}</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+        <profile>
+            <id>inskylab-oss-release</id>
+            <distributionManagement>
+                <!--    中央仓库  -->
+                <snapshotRepository>
+                    <id>inskylab-snapshots</id>
+                    <name>Snapshots Repository</name>
+                    <url>${inskylab-snapshots}</url>
+                </snapshotRepository>
+                <repository>
+                    <id>inskylab-releases</id>
+                    <name>Release Repository</name>
+                    <url>${inskylab-releases}</url>
                 </repository>
             </distributionManagement>
         </profile>
