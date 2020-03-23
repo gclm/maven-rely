@@ -15,7 +15,7 @@ nexus/Maven 中央仓库上传父类
 <parent>
      <groupId>club.gclmit</groupId>
      <artifactId>oss-nexus-parent</artifactId>
-     <version>3.0.0</version>
+     <version>3.1.0</version>
 </parent>
 ```
 
@@ -26,6 +26,8 @@ nexus/Maven 中央仓库上传父类
 mvn clean deploy -P sonatype-oss-release
 # 华为云 Nexus
 mvn clean deploy -P huaweicloud-oss-release
+# inskylab Nexus
+mvn clean deploy -P inskylab-oss-release
 ```
 
 # 版本日志
@@ -35,3 +37,4 @@ mvn clean deploy -P huaweicloud-oss-release
 - 2019.12.03 优化代码更新文档
 - 2020.01.03 更改 nexus 为华为云的。发布最新的使用文档
 - 2020.01.21 合并中央仓库和 nexus 仓库，发布3.0.0 版本
+- 2020.01.21 合并中央仓库和 nexus 仓库，发布3.1.0 版本
