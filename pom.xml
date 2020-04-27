@@ -31,13 +31,13 @@
         </sonatype-snapshots>
 
         <!--  华为云 nexus -->
-        <huaweicloud-releases>
+        <huawei-releases>
             https://devrepo.devcloud.cn-north-4.huaweicloud.com/07/nexus/content/repositories/ec64d022094d4aa8a9fa1143342c8a45_1_0/
-        </huaweicloud-releases>
+        </huawei-releases>
 
-        <huaweicloud-snapshots>
+        <huawei-snapshots>
             https://devrepo.devcloud.cn-north-4.huaweicloud.com/07/nexus/content/repositories/ec64d022094d4aa8a9fa1143342c8a45_2_0/
-        </huaweicloud-snapshots>
+        </huawei-snapshots>
 
         <!--  inskylab nexus -->
         <inskylab-releases>
@@ -95,18 +95,18 @@
             </distributionManagement>
         </profile>
         <profile>
-            <id>huaweicloud-oss-release</id>
+            <id>huawei-oss-release</id>
             <distributionManagement>
-                <!--    中央仓库  -->
+                <!--    华为云 nexus  -->
                 <snapshotRepository>
-                    <id>huaweicloud-snapshots</id>
+                    <id>huawei-snapshots</id>
                     <name>Snapshots Repository</name>
-                    <url>${huaweicloud-snapshots}</url>
+                    <url>${huawei-snapshots}</url>
                 </snapshotRepository>
                 <repository>
-                    <id>huaweicloud-releases</id>
+                    <id>huawei-releases</id>
                     <name>Release Repository</name>
-                    <url>${huaweicloud-releases}</url>
+                    <url>${huawei-releases}</url>
                 </repository>
             </distributionManagement>
         </profile>
