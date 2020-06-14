@@ -15,3 +15,4 @@ echo "发布到 sonatype"
 mvn clean deploy -P sonatype-oss-release
 
 echo "打开 sonatype: https://oss.sonatype.org/"
+
