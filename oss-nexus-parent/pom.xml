@@ -6,7 +6,7 @@
 
     <groupId>club.gclmit</groupId>
     <artifactId>oss-nexus-parent</artifactId>
-    <version>3.2.0.RELEASE</version>
+    <version>3.2.1.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -41,7 +41,7 @@
 
         <!--  github nexus -->
         <github-releases>
-            https://maven.pkg.github.com/gclm/chaos
+            https://maven.pkg.github.com/gclm/chaos/
         </github-releases>
 
     </properties>
@@ -79,12 +79,12 @@
             <id>sonatype-oss-release</id>
             <distributionManagement>
                 <snapshotRepository>
-                    <id>sonatype-snapshots</id>
+                    <id>sonatype-nexus</id>
                     <name>Snapshots Repository</name>
                     <url>${sonatype-snapshots}</url>
                 </snapshotRepository>
                 <repository>
-                    <id>sonatype-releases</id>
+                    <id>sonatype-nexus</id>
                     <name>Release Repository</name>
                     <url>${sonatype-releases}</url>
                 </repository>
@@ -95,7 +95,7 @@
             <id>github-oss-release</id>
             <distributionManagement>
                 <repository>
-                    <id>github-releases</id>
+                    <id>github-nexus</id>
                     <name>Release Repository</name>
                     <url>${github-releases}</url>
                 </repository>
@@ -106,12 +106,12 @@
             <id>huawei-oss-release</id>
             <distributionManagement>
                 <snapshotRepository>
-                    <id>huawei-snapshots</id>
+                    <id>huawei-nexus</id>
                     <name>Snapshots Repository</name>
                     <url>${huawei-snapshots}</url>
                 </snapshotRepository>
                 <repository>
-                    <id>huawei-releases</id>
+                    <id>huawei-nexus</id>
                     <name>Release Repository</name>
                     <url>${huawei-releases}</url>
                 </repository>
