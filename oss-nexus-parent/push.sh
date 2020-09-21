@@ -8,11 +8,11 @@ git add .
 git commit -m "$date 发布新版本 $version"
 git push
 
-echo "发布到 Github"
-mvn clean deploy -P github-oss-release
-
 echo "发布到 华为云"
 mvn clean deploy -P huawei-oss-release
+
+echo "发布到 Github"
+mvn clean deploy -P github-oss-release
 
 echo "发布到 sonatype"
 mvn clean deploy -P sonatype-oss-release

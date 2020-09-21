@@ -41,7 +41,7 @@
 
         <!--  github nexus -->
         <github-releases>
-            https://maven.pkg.github.com/gclm/maven-repository/
+            https://maven.pkg.github.com/gclm/maven/
         </github-releases>
 
     </properties>
