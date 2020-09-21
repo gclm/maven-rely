@@ -6,7 +6,7 @@
     <parent>
         <groupId>club.gclmit</groupId>
         <artifactId>oss-nexus-parent</artifactId>
-        <version>3.2.1.RELEASE</version>
+        <version>3.2.2.RELEASE</version>
     </parent>
 
     <artifactId>chaos-dependencies</artifactId>
