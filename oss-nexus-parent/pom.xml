@@ -6,7 +6,7 @@
 
     <groupId>club.gclmit</groupId>
     <artifactId>oss-nexus-parent</artifactId>
-    <version>3.1.5.RELEASE</version>
+    <version>3.2.0.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -39,14 +39,10 @@
             https://devrepo.devcloud.cn-north-4.huaweicloud.com/07/nexus/content/repositories/ec64d022094d4aa8a9fa1143342c8a45_2_0/
         </huawei-snapshots>
 
-        <!--  inskylab nexus -->
-        <inskylab-releases>
-            https://maven.inskydrone.cn/repository/maven-releases/
-        </inskylab-releases>
-
-        <inskylab-snapshots>
-            https://maven.inskydrone.cn/repository/maven-snapshots/
-        </inskylab-snapshots>
+        <!--  github nexus -->
+        <github-releases>
+            https://maven.pkg.github.com/gclm/chaos
+        </github-releases>
 
     </properties>
 
@@ -78,10 +74,10 @@
     </scm>
 
     <profiles>
+        <!--   sonatype 仓库  -->
         <profile>
             <id>sonatype-oss-release</id>
             <distributionManagement>
-                <!--    中央仓库  -->
                 <snapshotRepository>
                     <id>sonatype-snapshots</id>
                     <name>Snapshots Repository</name>
@@ -94,10 +90,21 @@
                 </repository>
             </distributionManagement>
         </profile>
+        <!--   github 仓库  -->
+        <profile>
+            <id>github-oss-release</id>
+            <distributionManagement>
+                <repository>
+                    <id>github-releases</id>
+                    <name>Release Repository</name>
+                    <url>${github-releases}</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+        <!--   华为云 nexus  -->
         <profile>
             <id>huawei-oss-release</id>
             <distributionManagement>
-                <!--    华为云 nexus  -->
                 <snapshotRepository>
                     <id>huawei-snapshots</id>
                     <name>Snapshots Repository</name>
@@ -107,22 +114,6 @@
                     <id>huawei-releases</id>
                     <name>Release Repository</name>
                     <url>${huawei-releases}</url>
-                </repository>
-            </distributionManagement>
-        </profile>
-        <profile>
-            <id>inskylab-oss-release</id>
-            <distributionManagement>
-                <!--    中央仓库  -->
-                <snapshotRepository>
-                    <id>inskylab-snapshots</id>
-                    <name>Snapshots Repository</name>
-                    <url>${inskylab-snapshots}</url>
-                </snapshotRepository>
-                <repository>
-                    <id>inskylab-releases</id>
-                    <name>Release Repository</name>
-                    <url>${inskylab-releases}</url>
                 </repository>
             </distributionManagement>
         </profile>
