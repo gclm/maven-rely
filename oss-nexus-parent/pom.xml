@@ -6,7 +6,7 @@
 
     <groupId>club.gclmit</groupId>
     <artifactId>oss-nexus-parent</artifactId>
-    <version>3.2.1.RELEASE</version>
+    <version>3.2.2.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -41,7 +41,7 @@
 
         <!--  github nexus -->
         <github-releases>
-            https://maven.pkg.github.com/gclm/chaos/
+            https://maven.pkg.github.com/gclm/maven-repository/
         </github-releases>
 
     </properties>
