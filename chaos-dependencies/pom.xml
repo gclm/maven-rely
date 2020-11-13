@@ -11,7 +11,7 @@
 
     <artifactId>chaos-dependencies</artifactId>
     <packaging>pom</packaging>
-    <version>1.6.2.RELEASE</version>
+    <version>1.6.3.RELEASE</version>
 
     <name>${project.artifactId}</name>
     <url>https://blog.gclmit.club/</url>
@@ -51,9 +51,9 @@
 
         <!-- tools  -->
         <okhttps.version>2.4.2</okhttps.version>
-        <justauth.version>1.15.7</justauth.version>
+        <justauth.version>1.15.8</justauth.version>
         <justauth.starter.version>1.3.3</justauth.starter.version>
-
+        <hutool.version>5.4.7</hutool.version>
         <findbugs.version>3.0.1</findbugs.version>
         <zxing.version>3.4.0</zxing.version>
         <knife4j.version>2.0.5</knife4j.version>
@@ -68,7 +68,7 @@
     <dependencyManagement>
         <dependencies>
 
-            <!--   servlet       -->
+            <!--   servlet   -->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
@@ -300,11 +300,6 @@
 
 
             <!--            -->
-            <dependency>
-                <groupId>nl.basjes.parse.useragent</groupId>
-                <artifactId>yauaa</artifactId>
-                <version>${useragent.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>com.github.ulisesbocchio</groupId>
