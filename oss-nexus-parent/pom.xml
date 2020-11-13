@@ -6,7 +6,7 @@
 
     <groupId>club.gclmit</groupId>
     <artifactId>oss-nexus-parent</artifactId>
-    <version>3.2.2.RELEASE</version>
+    <version>3.2.3.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -39,10 +39,14 @@
             https://devrepo.devcloud.cn-north-4.huaweicloud.com/07/nexus/content/repositories/ec64d022094d4aa8a9fa1143342c8a45_2_0/
         </huawei-snapshots>
 
-        <!--  github nexus -->
-        <github-releases>
-            https://maven.pkg.github.com/gclm/maven/
-        </github-releases>
+        <!--  阿里云 nexus -->
+        <rbc-releases>
+            https://packages.aliyun.com/maven/repository/2005667-release-cwgzOl/
+        </rbc-releases>
+
+        <rbc-snapshots>
+            https://packages.aliyun.com/maven/repository/2005667-snapshot-wIxIpB/
+        </rbc-snapshots>
 
     </properties>
 
@@ -90,17 +94,24 @@
                 </repository>
             </distributionManagement>
         </profile>
-        <!--   github 仓库  -->
+
+        <!--   阿里云 仓库  -->
         <profile>
-            <id>github-oss-release</id>
+            <id>rdc-oss-release</id>
             <distributionManagement>
+                <snapshotRepository>
+                    <id>rdc-nexus</id>
+                    <name>Snapshots Repository</name>
+                    <url>${rbc-snapshots}</url>
+                </snapshotRepository>
                 <repository>
-                    <id>github-nexus</id>
+                    <id>rdc-nexuss</id>
                     <name>Release Repository</name>
-                    <url>${github-releases}</url>
+                    <url>${rbc-releases}</url>
                 </repository>
             </distributionManagement>
         </profile>
+
         <!--   华为云 nexus  -->
         <profile>
             <id>huawei-oss-release</id>
