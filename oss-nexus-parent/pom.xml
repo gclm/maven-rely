@@ -6,7 +6,7 @@
 
     <groupId>club.gclmit</groupId>
     <artifactId>oss-nexus-parent</artifactId>
-    <version>3.2.3.RELEASE</version>
+    <version>3.2.4.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -97,7 +97,7 @@
 
         <!--   阿里云 仓库  -->
         <profile>
-            <id>rdc-oss-release</id>
+            <id>rbc-oss-release</id>
             <distributionManagement>
                 <snapshotRepository>
                     <id>rdc-nexus</id>
@@ -105,7 +105,7 @@
                     <url>${rbc-snapshots}</url>
                 </snapshotRepository>
                 <repository>
-                    <id>rdc-nexuss</id>
+                    <id>rdc-nexus</id>
                     <name>Release Repository</name>
                     <url>${rbc-releases}</url>
                 </repository>
