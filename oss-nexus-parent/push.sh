@@ -11,8 +11,8 @@ git push
 echo "发布到 华为云"
 mvn clean deploy -P huawei-oss-release
 
-echo "发布到 Github"
-mvn clean deploy -P github-oss-release
+echo "发布到 阿里云"
+mvn clean deploy -P rbc-oss-release
 
 echo "发布到 sonatype"
 mvn clean deploy -P sonatype-oss-release
